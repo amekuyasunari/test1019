@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cafe</title>
+    <link rel="stylesheet" href="../test/css/style.css">
+    <link rel="stylesheet" href="./css/style_sp.css" media="screen and (max-width:480px)">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/common.js"></script>
+</head>
+
+<body>
+    
+    <script>
+
+        console.log("ふはっはっはは〜またHello World!");
+        
+    </script>
+
+
+    <!-- エメット  header>.logo+ul>(li>a)*4 -->
+    <header>
+        <div class="logo">logo</div>
+        <ul>
+            <li><a href="#sec1">TOP</a></li>
+            <li><a href="#sec2">ABOUT</a></li>
+            <li><a href="#sec3">FAVORITE</a></li>
+            <li><a href="#sec4">PROFILE</a></li>
+        </ul>
+    </header>
+
+    <!-- エメット article>section#sec$*4 -->
+    <article>
+        <section id="sec1">
+            <div class="container">
+                <h1>Yasunari Ameku</h1>
+            </div>
+        </section>
+        
+        <section id="sec2">
+            <!--エメット h1{ABOUT}+p -->
+            <h2>ABOUT</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae mollitia perspiciatis magnam repellat deserunt et, consequatur atque dolorum ipsa asperiores quia eaque tempore ducimus doloremque eveniet quos eos. Dolores, laudantium!</p>
+        </section>
+
+        <section id="sec3">
+            <!--エメット h2+.container>(.box>img+h3+p)*3  -->
+            <h2>セクション見出し</h2>
+
+            <div class="container">
+
+                <div class="box">
+                    <img src="./img/cafe_img5.jpg" alt="">
+                    <h3>見出し1見出し1</h3>
+                    <p>本文1</p>
+                </div>
+
+                <div class="box">
+                    <img src="./img/cafe_img6.jpg" alt="">
+                    <h3>見出し2見出し2</h3>
+                    <p>本文2</p>
+                </div>
+
+                <div class="box">
+                    <img src="./img/cafe_img7.jpg" alt="">
+                    <h3>見出し3見出し3</h3>
+                    <p>本文3</p>
+                </div>
+
+            </div>
+            
+
+
+        </section>
+
+        <section id="sec4">
+            <h2 class="sec4">PROFILE</h2>
+            <!--エメット .prof>img+.profContent>p*4  -->
+            <div class="prof">
+                <img src="../test/img/twitter_profile_400x400.jpeg" alt="">
+                <div class="profContent">
+                    <p>名前：あめくやすなり</p>
+                    <p>できること：HTML・CSS・JavaScript</p>
+                    <p>あああああ</p>
+                    <p>あああああ</p>
+                </div>
+            </div>
+        </section>
+
+        
+
+    </article>
+
+    <a href="javascript:twitText()"><img src="http://www.shurey.com/img/twitter-a.png" alt="Send to Twitter" width="61" height="23"></a>
+
+
+
+
+
+
+</body>
+
+</html>

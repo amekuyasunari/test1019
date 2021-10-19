@@ -1,0 +1,151 @@
+@charset "UTF-8";
+html {
+	overflow-y: scroll; /* IEへの対応 http://www.htmq.com/style/overflow-y.shtml */
+	/*Internet Explorerが独自に追加したプロパティ*/
+	/*画面に収まりきれなかったときにスクロールして表示することを許可するか否か*/
+    scroll-behavior: smooth;
+}
+/* リセットおまじない--------------------------------- */
+body, h1, h2, h3, h4, h5, p, ul, ol, li, dl, dt, dd {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background: #fff;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.4;
+	min-width: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+li {
+	list-style: none;
+}
+a {
+	outline: none;
+	color: inherit;
+    text-decoration: none;
+}
+img {
+	border: 0px;
+	vertical-align: bottom;
+}
+/* --------------------------------------------------- */
+body {
+	font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", "Meiryo", "HGPｺﾞｼｯｸM", "Osaka", "ＭＳ Ｐゴシック", sans-serif, Century Gothic, Arial;
+    color:#3b4043;
+    
+}
+h1{
+    font-size: 28px;
+    margin: 40px;
+}
+h2{
+    font-size: 20px;
+    margin: 10px 0;
+}
+p{
+    text-align: left;
+}
+a{
+    display:block;
+}
+
+/*-------------------------------------------------------*/
+
+header {
+    background-color: #000000;
+    width: 100%;
+    height: 55px;
+    color: #FFFFAA;
+    font-weight: 700;
+    line-height: 55px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+}
+
+header ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#sec1 {
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/cafe_img2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sec2,
+#sec3,
+#sec4 {
+    margin-top: 150px;
+}
+
+#sec2 {
+    background-color: aqua;
+    border: solid 3px black;
+    margin: 50px;
+    padding: 100px;
+}
+
+#sec3 {
+    margin-top: 100px;
+}
+
+#sec3 h2 {
+    margin-top: 50px;
+}
+
+#sec3 .box {
+    width: 30%;
+    display: inline-block;
+    margin: 0 1,6%;
+}
+
+#sec3 .box img {
+    width: 100%;
+}
+
+#sec3 h3 {
+    margin-top: 20px;
+}
+
+#sec3 .box p {
+    margin-top: 10px;
+}
+
+#sec4 {
+    padding-bottom: 100px;
+}
+
+#sec4 .prof {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sec4 .profContent {
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+#sec4 .profContent p {
+    margin-top: 40px;
+}
+
+#sec4 .prof img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
